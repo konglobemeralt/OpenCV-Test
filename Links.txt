@@ -1,0 +1,5 @@
+Installing OpenCV:
+https://www.youtube.com/watch?v=EcFtefHEEII
+
+Set up with Visual Studio 2013:
+https://www.youtube.com/watch?v=tHX3MLzwF6Q
