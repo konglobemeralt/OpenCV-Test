@@ -11,7 +11,8 @@ cam = cv2.VideoCapture(0)
 s, img = cam.read()
 
 windowName = "Vroom, Vroom"
-cv2.namedWindow('Front Camera')
+windowWebcam = "Boring Webcam"
+
 
 #Read three images, convert to greyscale (limit color space)
 tMinus = cv2.cvtColor(cam.read()[1], cv2.COLOR_RGB2GRAY)
@@ -30,6 +31,11 @@ while s:
     tMinus = tZero
     tZero = tPlus
     tPlus = cv2.cvtColor(cam.read()[1], cv2.COLOR_RGB2GRAY)
+
+
+    ## Debug webcam window
+    s, img = cam.read()
+    cv2.imshow(windowWebcam, img)
 
 
     key = cv2.waitKey(10)
