@@ -19,7 +19,7 @@ def main():
         ret, frame = capture.read()
 
         # Displays the current frame
-        cv2.imshow('Current', frame)
+        cv2.imshow('MoppeWindow', frame)
 
         # Converts image to grayscale.
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
